@@ -10,7 +10,7 @@ public abstract class ArmyFactory {
         this.armyType = armyType;
     }
 
-    public abstract Soldier SpawnSoldier();
+    public abstract Soldier SpawnSoldier(SoldierType type);
 
     public Turret createTurret(TurretType type){
         switch (type) {
