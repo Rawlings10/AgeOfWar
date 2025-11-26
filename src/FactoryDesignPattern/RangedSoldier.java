@@ -2,10 +2,11 @@ package FactoryDesignPattern;
 
 public class RangedSoldier extends Soldier{
 
+    private int damagePts = 5;
     //make a variable call ageMultiplier in the age state design pattern and assign it here so it multiplies the current age state
     public RangedSoldier(int ageMultiplier){
         this.soldierHP = 100 * ageMultiplier;
-        this.damagePts = 5 * ageMultiplier;
+        this.damagePts = damagePts * ageMultiplier;
         this.soldierType = SoldierType.Ranged;
     }
 

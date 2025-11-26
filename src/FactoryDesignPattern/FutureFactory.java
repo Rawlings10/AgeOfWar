@@ -8,11 +8,11 @@ public class FutureFactory extends ArmyFactory{
     public Soldier SpawnSoldier(SoldierType type) {
         switch (type){
             case Infantry:
-                return null; //add the soilder type
+                return new InfantrySoldier(1); //we would change this variable later when we do the state
             case Ranged:
-                return null; //add the soilder type
+                return new RangedSoldier(1); //we would change this variable later when we do the state
             case Mounted:
-                return null; //add the soilder type
+                return new MountedSoldier(1); //we would change this variable later when we do the state
             default: throw new IllegalArgumentException("Unknown type: " + type);
         }
     }
