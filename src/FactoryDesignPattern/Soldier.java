@@ -3,7 +3,9 @@ package FactoryDesignPattern;
 public abstract class Soldier {
     protected int soldierHP;
     int damagePts;
-    SoldierType soldierType;  //change soldier type in the uml class diagram to enum
+    SoldierType soldierType;
+    int distanceToTarget;
+    int soldierPosition;//change soldier type in the uml class diagram to enum
 
     public abstract void Attack();
 
