@@ -2,7 +2,13 @@ package FactoryDesignPattern;
 
 public class TurretType3 extends Turret{
 
-    public TurretType3() {super(70, 7, TurretType.Heavy);}
+    private static final int BASE_TURRET_HP = 100;
+    private static final int BASE_TURRET_DAMAGE = 15;
+
+    public TurretType3() 
+    {
+        super(BASE_TURRET_HP * ageMultiplier, BASE_TURRET_DAMAGE * ageMultiplier, TurretType.Magic);
+    }
 
     @Override
     public void Attack() {
