@@ -1,6 +1,6 @@
 package FactoryDesignPattern;
 
-public class ModernFactory extends ArmyFactory{
+public class ModernFactory extends ManagerArmyFactory {
 
     public ModernFactory(int healthArmyHQ) {super(healthArmyHQ, AgeState.Modern); }
 

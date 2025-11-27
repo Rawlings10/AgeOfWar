@@ -1,11 +1,11 @@
 package FactoryDesignPattern;
 
-public abstract class ArmyFactory {
+public abstract class ManagerArmyFactory {
 
     int healthArmyHQ;
     AgeState armyType;
 
-    public ArmyFactory(int healthArmyHQ, AgeState armyType){
+    public ManagerArmyFactory(int healthArmyHQ, AgeState armyType){
         this.healthArmyHQ = healthArmyHQ;
         this.armyType = armyType;
     }
